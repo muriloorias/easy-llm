@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lista de modelos de inteligência artificial: proprietários e de pesos abertos, com empresa, descrição e usos.">
+  <title>Modelos de IA — easy llm</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <nav class="navbar navbar-expand-lg sticky-top site-navbar" aria-label="Navegação principal">
+    <div class="container">
+      <a class="navbar-brand brand" href="index.html" aria-label="easy llm — página inicial">
+        <span class="brand-mark" aria-hidden="true">e</span>
+        <span>easy llm<span class="brand-period">.</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu-principal">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link active" href="modelos.html" aria-current="page">Modelos</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-brand btn-sm" href="contato.html#mensagem">Faça parte </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="conteudo">
+    <header class="page-hero">
+      <div class="container">
+        <p class="eyebrow">MODELOS DE IA</p>
+        <div class="row align-items-end g-4">
+          <div class="col-lg-8">
+            <h1>Conheça as famílias de <span class="text-highlight">modelos de linguagem.</span></h1>
+          </div>
+          <div class="col-lg-4"><p class="section-lead mb-2">Uma visão geral dos principais modelos, de quem os desenvolve e para que servem. Versões mudam rápido — confira sempre a documentação oficial.</p></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-space pt-0">
+      <div class="container">
+        <div class="models-toolbar">
+          <div class="filter-group" role="group" aria-label="Filtrar por tipo">
+            <button type="button" class="filter-btn is-active" data-filter="todos" aria-pressed="true">Todos</button>
+            <button type="button" class="filter-btn" data-filter="proprietario" aria-pressed="false">Proprietários</button>
+            <button type="button" class="filter-btn" data-filter="aberto" aria-pressed="false">comunidade</button>
+          </div>
+          <div class="model-search">
+            <label class="visually-hidden" for="busca-modelo">Buscar modelo</label>
+            <input type="search" class="form-control" id="busca-modelo" placeholder="Buscar por nome ou empresa...">
+          </div>
+        </div>
+
+        <div class="row g-4" id="lista-modelos">
+          <div class="col-md-6 col-lg-4" data-tipo="proprietario">
+            <article class="model-card">
+              <div class="model-head"><span class="model-logo"><img src="img/anthropic.svg" alt="" width="22" height="22" loading="lazy"></span><span class="model-badge">Proprietário</span></div>
+              <h3>Claude</h3>
+              <p class="model-maker">Anthropic</p>
+              <p class="model-desc">Família de modelos focada em segurança, raciocínio e escrita, muito usada em programação e análise de documentos longos.</p>
+              <ul class="model-tags"><li>Texto</li><li>Código</li><li>Visão</li><li>Agentes</li></ul>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-tipo="proprietario">
+            <article class="model-card">
+              <div class="model-head"><span class="model-logo"><img src="img/openai.svg" alt="" width="22" height="22" loading="lazy"></span><span class="model-badge">Proprietário</span></div>
+              <h3>GPT</h3>
+              <p class="model-maker">OpenAI</p>
+              <p class="model-desc">Família por trás do ChatGPT. Modelos de uso geral com forte suporte a ferramentas, imagens e voz.</p>
+              <ul class="model-tags"><li>Texto</li><li>Código</li><li>Visão</li><li>Voz</li></ul>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-tipo="proprietario">
+            <article class="model-card">
+              <div class="model-head"><span class="model-logo"><img src="img/googlegemini.svg" alt="" width="22" height="22" loading="lazy"></span><span class="model-badge">Proprietário</span></div>
+              <h3>Gemini</h3>
+              <p class="model-maker">Google DeepMind</p>
+              <p class="model-desc">Modelos multimodais nativos, capazes de trabalhar com texto, imagem, áudio e vídeo, com janelas de contexto extensas.</p>
+              <ul class="model-tags"><li>Multimodal</li><li>Código</li><li>Contexto longo</li></ul>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-tipo="proprietario">
+            <article class="model-card">
+              <div class="model-head"><span class="model-logo"><img src="img/x.svg" alt="" width="22" height="22" loading="lazy"></span><span class="model-badge">Proprietário</span></div>
+              <h3>Grok</h3>
+              <p class="model-maker">xAI</p>
+              <p class="model-desc">Modelos da xAI integrados à plataforma X, com acesso a informações em tempo real e tom mais informal.</p>
+              <ul class="model-tags"><li>Texto</li><li>Tempo real</li><li>Raciocínio</li></ul>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-tipo="proprietario">
+            <article class="model-card">
+              <div class="model-head"><span class="model-logo"><img src="img/cohere.svg" alt="" width="22" height="22" loading="lazy"></span><span class="model-badge">Proprietário</span></div>
+              <h3>Command</h3>
+              <p class="model-maker">Cohere</p>
+              <p class="model-desc">Modelos voltados a empresas, otimizados para busca com recuperação de dados (RAG), embeddings e uso multilíngue.</p>
+              <ul class="model-tags"><li>RAG</li><li>Embeddings</li><li>Multilíngue</li></ul>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-tipo="aberto">
+            <article class="model-card">
+              <div class="model-head"><span class="model-logo"><img src="img/meta.svg" alt="" width="22" height="22" loading="lazy"></span><span class="model-badge is-open">comunidade</span></div>
+              <h3>Llama</h3>
+              <p class="model-maker">Meta</p>
+              <p class="model-desc">Uma das famílias abertas mais populares, base de incontáveis ajustes finos e projetos da comunidade.</p>
+              <ul class="model-tags"><li>Texto</li><li>Visão</li><li>Execução local</li></ul>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-tipo="aberto">
+            <article class="model-card">
+              <div class="model-head"><span class="model-logo"><img src="img/mistral.svg" alt="" width="22" height="22" loading="lazy"></span><span class="model-badge is-open">comunidade</span></div>
+              <h3>Mistral</h3>
+              <p class="model-maker">Mistral AI</p>
+              <p class="model-desc">Startup francesa com modelos eficientes, vários com pesos abertos, e boa relação entre desempenho e custo.</p>
+              <ul class="model-tags"><li>Texto</li><li>Código</li><li>Eficiência</li></ul>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-tipo="aberto">
+            <article class="model-card">
+              <div class="model-head"><span class="model-logo"><img src="img/deepseek.svg" alt="" width="22" height="22" loading="lazy"></span><span class="model-badge is-open">comunidade</span></div>
+              <h3>DeepSeek</h3>
+              <p class="model-maker">DeepSeek</p>
+              <p class="model-desc">Modelos abertos com destaque para raciocínio passo a passo e matemática, a um custo de uso bastante baixo.</p>
+              <ul class="model-tags"><li>Raciocínio</li><li>Código</li><li>Matemática</li></ul>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-tipo="aberto">
+            <article class="model-card">
+              <div class="model-head"><span class="model-logo"><img src="img/alibabacloud.svg" alt="" width="22" height="22" loading="lazy"></span><span class="model-badge is-open">comunidade</span></div>
+              <h3>Qwen</h3>
+              <p class="model-maker">Alibaba Cloud</p>
+              <p class="model-desc">Linha ampla de modelos abertos, de versões pequenas a grandes, com bom suporte a idiomas e a código.</p>
+              <ul class="model-tags"><li>Multilíngue</li><li>Código</li><li>Visão</li></ul>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-tipo="aberto">
+            <article class="model-card">
+              <div class="model-head"><span class="model-logo"><img src="img/google.svg" alt="" width="22" height="22" loading="lazy"></span><span class="model-badge is-open">comunidade</span></div>
+              <h3>Gemma</h3>
+              <p class="model-maker">Google</p>
+              <p class="model-desc">Modelos leves e abertos criados a partir da pesquisa do Gemini, ideais para rodar em notebooks e dispositivos.</p>
+              <ul class="model-tags"><li>Leve</li><li>Execução local</li><li>Texto</li></ul>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4" data-tipo="aberto">
+            <article class="model-card">
+              <div class="model-head"><span class="model-logo"><img src="img/microsoft.svg" alt="" width="22" height="22" loading="lazy"></span><span class="model-badge is-open">comunidade</span></div>
+              <h3>Phi</h3>
+              <p class="model-maker">Microsoft</p>
+              <p class="model-desc">Modelos pequenos treinados com dados selecionados, que entregam bom raciocínio com poucos recursos.</p>
+              <ul class="model-tags"><li>Compacto</li><li>Raciocínio</li><li>Execução local</li></ul>
+            </article>
+          </div>
+        </div>
+
+        <p class="models-empty" id="sem-resultados" hidden>Nenhum modelo encontrado para essa busca.</p>
+      </div>
+    </section>
+
+    <section class="join-section section-space pt-0">
+      <div class="container">
+        <div class="join-panel row align-items-center g-4">
+          <div class="col-lg-8">
+            <p class="eyebrow">FALTOU ALGUM?</p>
+            <h2>Sugira um modelo para a lista.</h2>
+            <p>Conte qual modelo você usa ou gostaria de conhecer melhor.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end"><a class="btn btn-light btn-lg join-button" href="contato.html#mensagem">Enviar sugestão </a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">e</span><span>easy llm<span class="brand-period">.</span></span></a>
+      <p class="footer-note mb-0">Feito para quem acredita que aprender junto é melhor.</p>
+      <a class="footer-link" href="contato.html">Entre na conversa</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (function () {
+      var cards = Array.prototype.slice.call(document.querySelectorAll("#lista-modelos > [data-tipo]"));
+      var buttons = document.querySelectorAll(".filter-btn");
+      var search = document.getElementById("busca-modelo");
+      var empty = document.getElementById("sem-resultados");
+      var filter = "todos";
+
+      function apply() {
+        var term = search.value.trim().toLowerCase();
+        var visible = 0;
+        cards.forEach(function (card) {
+          var match = (filter === "todos" || card.dataset.tipo === filter) &&
+            (!term || card.textContent.toLowerCase().indexOf(term) !== -1);
+          card.hidden = !match;
+          if (match) visible++;
+        });
+        empty.hidden = visible > 0;
+      }
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          filter = btn.dataset.filter;
+          buttons.forEach(function (b) {
+            var on = b === btn;
+            b.classList.toggle("is-active", on);
+            b.setAttribute("aria-pressed", on);
+          });
+          apply();
+        });
+      });
+      search.addEventListener("input", apply);
+    })();
+  </script>
+</body>
+</html>
